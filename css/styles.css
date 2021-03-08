@@ -1,0 +1,118 @@
+/* stylesheet for the fitness web pages */
+/* styles for the body */
+body {
+    background-color: #FFFF99;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* styles for mobile layout */
+
+/* styles for the container id */
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    margin-top: 0.2em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    /* padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+    border-radius: 20px; */
+}
+
+/* styles regarding ul iinside nav */
+
+
+nav ul {
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* styles for the li in the ul in the nav */
+nav li {
+    background-color: #009933;
+    margin: 0.3em;
+    padding: 0.4em;
+    border-radius: 2em;
+    list-style-type:none;
+}
+
+/* styles for the anchor elements inside the li inside nav */
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* styles to display mobile class */
+.mobile {
+    display: inline;
+}
+
+/* styles to hide the desktop class */
+.desktop {
+    display: none;
+}
+
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 2em 0 2em 0;
+}
+
+footer {
+    font-size: .7em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* styles for the tablet class */
+.tablet {
+    display: none;
+}
+
+.equip {
+    /* float: left;
+    padding: 0 20px 20px; */
+    display: none;
+}
+/* 
+@media (orientation: landscape) {
+    body {
+        background-color: cyan;
+    }
+} */
+
+@media only screen and (min-width: 481px) {
+    /* styles for li inside nav */
+    nav li {
+        display: inline;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 0;
+        padding-right: 0;
+        width: 18%;
+    }
+}
+
