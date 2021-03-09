@@ -1,7 +1,8 @@
 /* stylesheet for the fitness web pages */
 /* styles for the body */
 body {
-    background-color: #FFFF99;
+    /* background-color: #FFFF99; */
+    background-color: #1d1d1c;
 }
 
 img {
@@ -18,9 +19,9 @@ img {
 }
 
 header {
-    margin-top: 0.2em;
+    /* margin-top: 0.2em;
     background-color: #fff;
-    border-radius: 0.5em;
+    border-radius: 0.5em; */
     text-align: center;
 }
 
@@ -29,6 +30,7 @@ nav {
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
+    margin-top: -1.5em;
     /* padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -48,7 +50,8 @@ nav ul {
 
 /* styles for the li in the ul in the nav */
 nav li {
-    background-color: #009933;
+    /* background-color: #009933; */
+    background-color: #9d9d93;
     margin: 0.3em;
     padding: 0.4em;
     border-radius: 2em;
@@ -78,12 +81,30 @@ main {
     padding: 1em;
     background-color: #ffffff;
     border-radius: 2em 0 2em 0;
+    opacity: 0.85;
 }
 
 footer {
     font-size: .7em;
     text-align: center;
     margin-top: 2em;
+    color: #fff;
+}
+
+/* style for the links inside main */
+main a {
+    border-radius: 1em;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: #9d9d93;
+    text-decoration: none;
+}
+
+/* style for the links in the footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* styles for the tablet class */
@@ -115,12 +136,16 @@ footer {
         padding-right: 0;
         width: 18%;
         white-space: nowrap;
+        border-radius: 0;
+        background-color: transparent;
     }
 
     /* styles for the main element */
     main {
         clear: left;
-        margin-top: 4em;
+        /* margin-top: 4em; */
+        border-radius: 0;
+        margin-top: -0.3em;
     }
 
     /*  hiding mobile class*/
@@ -142,6 +167,25 @@ footer {
 
     h1 {
         clear: left;
+        text-align: center;
+    }
+
+    /* style fot the images inside figure */
+    figure img {
+        background-color: #1d1d1c;
+        display: inline;
+        height: 8em;
+        width: calc(100% / 3 - 5%);
+        /* width: 28%; */
+        margin: 1%;
+        padding: 1%;
+    }
+
+    /* style for the links inside the figure */
+    figure a {
+        background-color: transparent;
+        padding: 0;
+        text-decoration: none;
     }
 
     /* display items class */
@@ -166,7 +210,8 @@ footer {
 @media only screen and (min-width: 900px) {
     /* style for the container id */
     #container {
-        width: 80%;
+        /* width: 80%; */
+        background-color: #1d1d1c;
     }
 
     /* styles for the ul inside the nav */
@@ -178,9 +223,9 @@ footer {
 
     /* styles for the li inside the nav */
     nav li {
-        border-radius: 0;
+        /* border-radius: 0;
         border-top: solid #000;
-        border-bottom: solid #000;
+        border-bottom: solid #000; */
         margin-left: 0;
         margin-right: 0;
         padding: 0;
@@ -195,6 +240,7 @@ footer {
     nav li a {
         display: inline-block;
         padding: 0.7em;
+        text-shadow: 0.2em 0.2em 0.1em #3d3d35;
     }
 
     /* styles for the main */
@@ -203,12 +249,17 @@ footer {
         box-shadow: 0.5em 0.5em 0.5em #404040;
         margin-bottom: 1em;
         margin-top: 1em;
+        background-color: #1d1d1c;
     }
 
     /* paragraphs inside main */
     main p {
         padding-left: 0.5em;
         padding-right: 0.5em;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
     }
 
     /* styles for the item class */
@@ -222,11 +273,11 @@ footer {
     }
 
     nav li a:visited {
-        color: #0f9;
+        color: #ccf;
     }
 
     nav li a:hover {
-        color: #ff0;
+        color: #9d9d93;
         font-style: italic;
     }
 
@@ -236,8 +287,44 @@ footer {
 
     body {
         /* background: linear-gradient(135deg, orange 60%, cyan); */
-        background: linear-gradient(#fff 60%, #ff9);
-        background-attachment: fixed;
+        /* background: linear-gradient(#fff 60%, #ff9);
+        background-attachment: fixed; */
+        background: #fff;
+    }
+
+    /* style for header of desktop view port */
+    header {
+        text-align: right;
+    }
+
+    /* style for the nav */
+    nav {
+        float: left;
+        margin-top: -7em;
+        width: 60%;
+    }
+
+    /* style for the img inside the figure */
+    figure img {
+        height: 15em;
+        opacity: 0.7;
+    }
+
+    /* pseudo class for the imges inside figure */
+    figure img:hover {
+        opacity: 1;
+        /* cursor: pointer; */
+    }
+
+    h1 {
+        color: #fff;
+    }
+
+    /* style for the footer */
+    footer {
+        background-color: #2a2a2a;
+        margin-top: -0.2em;
+        padding: 2em;
     }
 
 
