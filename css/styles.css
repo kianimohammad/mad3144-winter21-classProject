@@ -167,7 +167,7 @@ footer a {
 
     h1 {
         clear: left;
-        text-align: center;
+        /* text-align: center; */
     }
 
     /* style fot the images inside figure */
@@ -192,17 +192,46 @@ footer a {
     .items {
         display: block;
         list-style-position: inside;
-        margin-bottom: 6em;
+        /* margin-bottom: 6em; */
     }
 
     /* display class tablet */
     .tablet {
         display: block;
+        margin-top: -3em;
+        margin-bottom: -1em;
     }
 
     dt {
         font-weight: bold;
         margin-top: 0.7em;
+    }
+
+    section {
+        padding-bottom: 3em;
+    }
+
+    /* style for the h1 inside the section element */
+    section h1 {
+        text-align: left;
+    }
+
+    /* style regarding links inside the section element */
+    section a {
+        padding: 0;
+        background-color: transparent;
+        color: #1d1d1c;
+        font-weight: normal;
+        text-decoration: underline;
+    }
+
+    /* style for the contact class */
+    .contact {
+        background-color: transparent;
+        color: #1d1d1c;
+        padding: 0;
+        text-decoration: underline;
+        font-weight: normal;
     }
 }
 
@@ -263,9 +292,9 @@ footer a {
     }
 
     /* styles for the item class */
-    .items {
+    /* .items {
         margin-bottom: 7em;
-    }
+    } */
 
     /*  styles for the links inside the nav*/
     nav li a:link {
@@ -306,7 +335,7 @@ footer a {
 
     /* style for the img inside the figure */
     figure img {
-        height: 15em;
+        height: 12rem;
         opacity: 0.7;
     }
 
@@ -318,6 +347,7 @@ footer a {
 
     h1 {
         color: #fff;
+        text-align: center;
     }
 
     /* style for the footer */
@@ -325,6 +355,35 @@ footer a {
         background-color: #2a2a2a;
         margin-top: -0.2em;
         padding: 2em;
+    }
+
+
+    /* styles regarding section element */
+    section {
+        color: #fff;
+        margin-left: 1em;
+        padding-bottom: 5em;
+        margin-top: 2em;
+    }
+
+    section:first-of-type {
+        margin-top: 0;
+    }
+
+    section a {
+        color: #fff;
+    }
+    
+    section p {
+        margin-left: 0;
+    }
+
+    main h2 {
+        color: #fff;
+    }
+
+    .contact {
+        color: #fff;
     }
 
 
