@@ -31,25 +31,30 @@
         <!-- the area used for the content of the page -->
         <main>
             <h2>Ready to get started? Contact us today.</h2>
-            <h2>Complete the form below to begiin your free trial!</h2>
+            <h2>Complete the form below to begin your free trial!</h2>
             <form>
                 <fieldset>
                     <legend>Please fill the following form</legend>
+
                     <label for="fName">First Name:</label>
                     <input type="text" name="fName" id="fName">
                     <label for="lName">Last Name:</label>
                     <input type="text" name="lName" id="lName">
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                    <small>Format: 123-456-7890</small>
-                    <section>
-                        <p class="gender">Gender:</p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            style="display: inline-block;">
+                        <small>Format: 123-456-7890</small>
+                    </p>
+                    <section class="gender">
+                        <p>Gender:</p>
                         <div class="gender"><input type="radio" name="gender" id="female" value="female"
-                                class="radio"><label for="female" class="radio">Female</label></div>
+                                class="radio"><label for="female">Female</label></div>
                         <div class="gender"><input type="radio" name="gender" id="male" value="male"
-                                class="radio"><label for="male" class="radio">Male</label></div>
+                                class="radio"><label for="male">Male</label></div>
                     </section>
                     <p>I woudl like to receive information about: </p>
                     <ul>
@@ -85,19 +90,8 @@
             <p><a class="mobile" href="tel:8145559608">(814)555-9608</a>
                 <span class="desktop">(814)555-9608</span>
             </p>
-
-            <!-- <p>
-                Phone Number <br>
-                <a class="mobile" href="tel:8145559608">(814)555-9608</a>
-                <span class="desktop">(814)555-9608</span>
-            </p> -->
-
             <p>Email Address</p>
             <p><a class="contact" href="mailto:fitness@club.com">fitness@club.com</a></p>
-            <!-- <p>
-                Email Address <br>
-                <a href="mailto:fitness@club.com">fitness@club.com</a>
-            </p> -->
         </main>
         <!-- the area for the footer content -->
         <footer>

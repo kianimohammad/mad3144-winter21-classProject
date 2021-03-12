@@ -146,15 +146,17 @@ form ul {
 .gender label {
     text-align: left;
     color: #000;
+    width: fit-content;
+    padding-right: 1em;
+}
+
+.gender p {
+    margin: 0;
+    padding-right: 1em;
 }
 
 .gender {
     display: flex;
-}
-
-fieldset {
-    display: inline-block;
-    padding: 1em;
 }
 
 fieldset section {
@@ -166,6 +168,14 @@ form {
     margin-right: auto;
 }
 
+form fieldset {
+    padding: 0.5em;
+} 
+
+form p > small {
+    display: block;
+}
+
 #form-btn input {
     display: inline-block;
     margin-right: 0.5em;
@@ -174,6 +184,13 @@ form {
     border-radius: 1em;
     color: #fff;
     border: none;
+}
+.gender {
+    flex-direction: column;
+}
+.gender > div {
+    flex-direction: row;
+    margin-left: 5em;
 }
 /* 
 @media (orientation: landscape) {
@@ -331,6 +348,14 @@ form {
         margin: 1em;
     }
 
+    fieldset {
+        border: groove;
+    }
+    
+    fieldset legend {
+        visibility: visible;
+    }
+
     /* style for the label */
     label  {
         float: left;
@@ -339,17 +364,32 @@ form {
         width: 10em;
     }
 
-    form #form-btn {
-        text-align: center;
-    }
-
     form ul {
         text-align: left;
     }
+
+    .gender p {
+        width: 10em;
+        text-align: right;
+    }
     /* style for the btn class */
-    /* #form-btn {
-        margin-left: 8em;
-    } */
+    #form-btn:first-of-type {
+        margin-left: 10em;
+    }
+
+    form p > small {
+        display: inline;
+        padding-left: 1em;
+    }
+
+    .gender {
+        flex-direction: row;
+    }
+
+    .gender > div {
+        flex-direction: row;
+        margin-left: 0;
+    }
 
 
     /* .flex-container {
@@ -523,10 +563,14 @@ form {
     form {
         background-color: #fff;
         padding: 1em;
+        margin: 1em;
     }
 
     form p {
         color: #000;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
     }
 }
 
