@@ -192,6 +192,7 @@ form p > small {
     flex-direction: row;
     margin-left: 5em;
 }
+
 /* 
 @media (orientation: landscape) {
     body {
@@ -425,6 +426,35 @@ form p > small {
         padding-bottom: 0.5em;
     }
 
+    /* styel for the video class */
+    .video {
+        text-align: center;
+        padding: 1em;
+    }
+
+    video {
+        border: 0.5em ridge #fff;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* style for the copyright id div */
+    #copyright {
+        float: left;
+        margin-top: 2em;
+        width: 80%;
+    }
+
+    #social {
+        float: right;
+        width: 20%;
+    }
+
+    /* footer {
+        display: flex;
+        justify-content: space-between;
+    } */
+
 }
 
 /* media query for the desktop view port */
@@ -546,7 +576,8 @@ form p > small {
     footer {
         background-color: #2a2a2a;
         margin-top: -0.2em;
-        padding: 2em;
+        /* padding: 2em; */
+        overflow: auto;
     }
 
 
@@ -611,6 +642,11 @@ form p > small {
     /* style for the tabel caption */
     caption {
         color: #fff ;
+    }
+
+    /* style for the social  */
+    #social img {
+        padding: 0.5em;
     }
 }
 
