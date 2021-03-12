@@ -396,6 +396,35 @@ form p > small {
         display: flex;
     } */
 
+    /* style for the table element */
+    table {
+        border: 0.1em solid #000;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    /* style for the th and tr */
+    th, tr, td {
+        border: 0.1em solid #000;
+        padding: 1em;
+    }
+
+    /* style for th */
+    th {
+        background-color: #1d1d1c;
+        color: #fff;
+    }
+
+    /* style for the caption of the table */
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+
 }
 
 /* media query for the desktop view port */
@@ -571,6 +600,17 @@ form p > small {
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
+    }
+
+    /* style for the table  */
+    table {
+        background-color: #fff;
+        width: 80%;
+    }
+
+    /* style for the tabel caption */
+    caption {
+        color: #fff ;
     }
 }
 
